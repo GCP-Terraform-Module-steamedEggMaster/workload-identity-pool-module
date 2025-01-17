@@ -35,7 +35,7 @@ jobs:
     - name: Initialize Go Module
       run: |
         cd test
-        go mod init github.com/test/db-module
+        go mod init github.com/test/workload-identity-pool-module
         go mod tidy
 
     - name: Run Terraform Tests with Debug Logs
