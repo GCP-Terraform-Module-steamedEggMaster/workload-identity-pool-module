@@ -79,7 +79,7 @@ module "workload_identity_pool" {
 | 출력명        | 설명                                                                                       |
 |---------------|--------------------------------------------------------------------------------------------|
 | `id`          | 리소스의 고유 ID (형식: `projects/{{project}}/locations/global/workloadIdentityPools/{{workload_identity_pool_id}}`) |
-| `workload_pool_domain` | Workload Identity Pool의 구글 도메인                                            |
+| `workload_identity_pool_domain` | Workload Identity Pool의 구글 도메인                                            |
 | `state`       | Workload Identity Pool의 현재 상태 (ACTIVE, DELETED 등)                                   |
 | `name`        | Workload Identity Pool의 리소스 이름                                                      |
 | `display_name`| Workload Identity Pool의 표시 이름                                                        |

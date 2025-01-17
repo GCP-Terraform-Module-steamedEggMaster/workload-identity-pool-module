@@ -4,7 +4,7 @@ output "id" {
   value       = google_iam_workload_identity_pool.workload_identity_pool.id
 }
 
-output "workload_pool_domain" {
+output "workload_identity_pool_domain" {
   description = "Workload Identity Pool 구글 도메인"
   value       = "${var.workload_identity_pool_id}.svc.id.goog"
 }
