@@ -4,6 +4,11 @@ output "id" {
   value       = google_iam_workload_identity_pool.workload_identity_pool.id
 }
 
+output "workload_pool_domain" {
+  description = "Workload Identity Pool 구글 도메인"
+  value       = "${var.workload_identity_pool_id}.svc.id.goog"
+}
+
 # 워크로드 아이덴티티 풀의 상태 출력
 output "state" {
   description = "워크로드 아이덴티티 풀의 현재 상태 (ACTIVE, DELETED 등)"
